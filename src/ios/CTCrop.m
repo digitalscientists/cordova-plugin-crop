@@ -41,10 +41,8 @@
     CGFloat length = MIN(width, height);
     cropController.toolbarHidden = YES;
     cropController.rotationEnabled = YES;
-    cropController.keepingCropAspectRatio = NO;
     
-    cropController.imageCropRect = CGRectMake((width - length) / 2,
-                                              (height - length) / 2,
+    cropController.imageCropRect = CGRectMake(width, height,
                                               length,
                                               length);
     

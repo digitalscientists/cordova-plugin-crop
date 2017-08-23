@@ -42,7 +42,8 @@
     cropController.toolbarHidden = YES;
     cropController.rotationEnabled = YES;
     
-    cropController.imageCropRect = CGRectMake(width, height,
+    cropController.imageCropRect = CGRectMake((width - length) / 2,
+                                              (height - length) / 2,
                                               length,
                                               length);
     
